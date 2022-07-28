@@ -59,8 +59,8 @@ exports.deleteMovie = async (movieObj) => {
 		// get the title searched for
 		const deletedMovie = await Movie.delete({
 			where: {
-				title: movieObj.title,
-				actor: movieObj.actor,
+				title: movieObj.deleteTitle,
+				actor: movieObj.deleteActor,
 			},
 		});
 
